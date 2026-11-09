@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BusinessFlow – Freelance Business Manager for Google Sheets</title>
+  <meta name="description" content="BusinessFlow is a Google Sheets + Apps Script template for freelancers and small businesses: CRM, quotes, invoices, payments, expenses, and PDF export.">
+  <link rel="icon" href="assets/businessflow-logo-120.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="assets/businessflow-logo-120.png" alt="BusinessFlow logo">
+        <span>BusinessFlow</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#permissions">Permissions</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:mariusolsen13@gmail.com">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <p class="eyebrow">Google Sheets + Apps Script</p>
+          <h1>BusinessFlow</h1>
+          <p class="lead">
+            All-in-one freelance business manager that runs inside your Google account.
+            Track clients, projects, quotes, invoices, payments, and expenses — then export
+            professional PDFs and email them without leaving Sheets.
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="mailto:mariusolsen13@gmail.com">Contact support</a>
+            <a class="button button-secondary" href="privacy.html">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="grid">
+          <article class="card">
+            <h3>CRM &amp; projects</h3>
+            <p>Keep clients, leads, and project status in one workbook with a live dashboard.</p>
+          </article>
+          <article class="card">
+            <h3>Quotes &amp; invoices</h3>
+            <p>Create quotes, convert them to invoices, track payments, and generate credit notes.</p>
+          </article>
+          <article class="card">
+            <h3>PDFs &amp; email</h3>
+            <p>Export branded PDFs and send invoices or reminders using your Google account.</p>
+          </article>
+          <article class="card">
+            <h3>Expenses &amp; reports</h3>
+            <p>Log costs, review tax summaries, and see what needs attention at a glance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="permissions">
+      <div class="wrap">
+        <div class="panel">
+          <h2>Why BusinessFlow asks for Google permissions</h2>
+          <p>
+            BusinessFlow is an Apps Script template bound to a Google Sheet. When you authorize it,
+            Google may show a consent screen. The app only uses permissions needed to run inside
+            <strong>your</strong> Google account:
+          </p>
+          <ul>
+            <li><strong>Google Sheets</strong> — read and write your BusinessFlow workbook.</li>
+            <li><strong>Google Drive</strong> — create invoice/quote PDF files you generate.</li>
+            <li><strong>Gmail / send mail</strong> — email invoices and optional reminders as you.</li>
+            <li><strong>Apps Script UI &amp; triggers</strong> — menus, sidebars, shortcuts, and scheduled jobs.</li>
+            <li><strong>External requests</strong> — fetch optional resources such as a logo image URL.</li>
+          </ul>
+          <p>
+            Your business data stays in your Google account. See the
+            <a href="privacy.html">privacy policy</a> for full details.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div>© <span id="year"></span> BusinessFlow. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="mailto:mariusolsen13@gmail.com">mariusolsen13@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
